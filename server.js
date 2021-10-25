@@ -3,7 +3,7 @@ const bodyParser = require('body-parser');
 const MongoClient = require('mongodb').MongoClient;
 const app = express();
 const PORT = 3000;
-var connectionString = 'mongodb+srv://Azhad56:Dabkdi%40814126@cluster0.igivj.mongodb.net/myFirstDatabase?retryWrites=true&w=majority';
+var connectionString = 'mongodb+srv://<username>:<Password>@cluster0.igivj.mongodb.net/myFirstDatabase?retryWrites=true&w=majority';
 MongoClient.connect(connectionString)
     .then(client => {
         const dbo = client.db("starwars-quotes");
